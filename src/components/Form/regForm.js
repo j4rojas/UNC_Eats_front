@@ -32,7 +32,7 @@ export default class registrationForm extends React.Component {
             password:this.state.password
         }
         console.log(data);
-        fetch('http://localhost:8080/user/new', {
+        fetch('https://unc-eats-back.herokuapp.com/user/new', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
