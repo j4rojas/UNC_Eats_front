@@ -14,7 +14,7 @@ export default class Start extends React.Component {
             resturants:[]
         }
 
-        fetch('http://localhost:8080/resturant/all') 
+        fetch('https://unc-eats-back.herokuapp.com/resturant/all') 
             .then((rep)=>{return rep.json()})
             .then( (res) => {
                 
@@ -28,7 +28,7 @@ export default class Start extends React.Component {
     }
     handleDelete(event) {
         event.preventDefault();
-        fetch('http://localhost:8080/resturant/one/' + event.currentTarget.value +'/' +  localStorage.getItem('token'), {
+        fetch('https://unc-eats-back.herokuapp.com/resturant/one/' + event.currentTarget.value +'/' +  localStorage.getItem('token'), {
             method: 'Delete',
             headers: {
                 'Content-Type':'application/json'
