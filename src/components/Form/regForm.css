@@ -1,0 +1,121 @@
+h1{
+    border-bottom:25px solid #99BADD;
+    padding: 10px;
+}
+
+.regTitle{
+    background-color: rgb(3,30,58);
+    text-align:center;
+    font-size:25px;
+    margin: 0 0;
+    border-radius: 2px;
+    width:100%;
+    border-bottom: 20px solid #99BADD;
+    position:absolute;
+}
+p {
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 15px;
+}
+
+.regForm {
+    border-radius: 5px;
+    border: 1px grey solid;
+    width: 40%;
+    margin:12% auto;
+    position: relative; 
+}
+.container {
+    width:100%;
+    margin: 0 0;
+}
+
+.firstname.Info {
+    margin-top:20%;
+}
+
+.Info {
+    width: 30%;
+    height:35px;
+    margin:3% 10%;
+}
+.email{
+    width:80%;
+}
+
+.regBtn.btn.btn-primary {
+    position:relative;
+    background-color: #99Badd;
+    border-color:#99BADD;
+    margin: 2% 32%;
+    width:35%;
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media screen  
+  and (min-width: 320px)
+  and (max-width:414px)  
+  {
+    .regTitle {
+        border-bottom: 19px solid #99BADD;
+        padding: 2%;
+        font-size: 27px;
+    }
+    .regForm {
+        width: 85%;
+        margin: 10% auto;
+    }
+    .firstname.Info {
+        margin-top:43%;
+    }
+    .Info {
+        width: 80%;
+        height:35px;
+        margin:3% 10%;
+    }
+    .regBtn.btn.btn-primary{
+        margin: 4% 35%;
+        width:50%;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen 
+    and (min-width: 415px)
+    and (max-width:768px) {
+        .regTitle {
+            font-size: 21px;
+        }
+        .regForm {
+            width:75%;
+        }
+        .firstname.Info {
+            margin-top: 35%;
+        }
+        .Info {
+            width:80%;
+        }
+       
+}
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+@media only screen
+  and (min-width:769px)
+  and (max-width: 1024px)
+  {
+    .regTitle {
+        font-size:25px;
+    }
+    .regForm {
+        width: 43%;
+    }
+    .firstname.Info {
+        margin-top: 26%;
+    }
+   
+}
