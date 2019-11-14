@@ -36,7 +36,7 @@ export default class newForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch('http://localhost:8080/resturant/new/' + localStorage.getItem('token'), {
+        fetch('https://unc-eats-back.herokuapp.com/resturant/new/' + localStorage.getItem('token'), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
