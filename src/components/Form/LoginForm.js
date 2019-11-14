@@ -22,7 +22,7 @@ export default class LoginForm extends React.Component {
     
     loginSubmit(event) {
         event.preventDefault();
-        fetch('http://localhost:8080/user/login', {
+        fetch('https://unc-eats-back.herokuapp.com/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
