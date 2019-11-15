@@ -12,7 +12,6 @@ export default class Home extends React.Component {
             resturants:[]
         }
         fetch('https://unc-eats-back.herokuapp.com/resturant/all') 
-        // need to create token or might be part of the public view 
             .then((rep)=>{return rep.json()})
             .then( (res) => {
                 
